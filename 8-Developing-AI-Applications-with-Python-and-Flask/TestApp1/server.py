@@ -5,6 +5,12 @@ from flask import Flask
 app = Flask(__name__)
 
 # Define a route for the root URL ("/")
+# @app.route("/")
+# def home():
+#     return "Hello, World!"
+
+
+# return a JSON
 @app.route("/")
 def home():
-    return "Hello, World!"
+    return {'message': 'Hello, World!'}
